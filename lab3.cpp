@@ -18,7 +18,7 @@ int main(){
 
     // Check Vowels
     for(int i=0;i<s1.length();i++){
-        if(vowels.find(s1[i])){
+        if(vowels.find(s1[i])!= string::npos){
             vCount++;
         }
     }

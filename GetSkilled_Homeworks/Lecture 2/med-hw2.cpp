@@ -14,7 +14,7 @@ int main()
 
     // Formulas
     int normal_result{end * (end + 1) / 2};
-    int users_result{normal_result - ((start - 1) * ((start - 1) + 1) / 2)};
+    int users_result{normal_result - ((start - 1) * (start) / 2)};
 
     // Task
     cout << "The sum from 1 to " << end << " = " << normal_result << endl;

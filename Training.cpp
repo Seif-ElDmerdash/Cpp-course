@@ -321,47 +321,47 @@
 
 //
 
-#include <iostream>
-#include <cmath>
-#include <limits>
-using namespace std;
+// #include <iostream>
+// #include <cmath>
+// #include <limits>
+// using namespace std;
 
-int main()
-{
+// int main()
+// {
 
-    bool o{true};
-    float y{3.5};
-    double z{32.67148465489};
-    int x{5};
-    unsigned int m{2147483646 + 1};
-    long long l{9223372036854775807};
-    unsigned long long n{18446744073709551615};
-    char ch{'S'};
-    unsigned char ch2{'T'};
-    std::string word{"SEIF"};
-    const std::string NAME{"TAYER"};
+//     bool o{true};
+//     float y{3.5};
+//     double z{32.67148465489};
+//     int x{5};
+//     unsigned int m{2147483646 + 1};
+//     long long l{9223372036854775807};
+//     unsigned long long n{18446744073709551615};
+//     char ch{'S'};
+//     unsigned char ch2{'T'};
+//     std::string word{"SEIF"};
+//     const std::string NAME{"TAYER"};
 
-    cout << CHAR_MAX << endl
-         << CHAR_MIN << endl;
-    cout << INT_MAX << endl
-         << INT_MIN << endl;
-    cout << LONG_LONG_MAX << endl
-         << ULLONG_MAX << endl;
+//     cout << CHAR_MAX << endl
+//          << CHAR_MIN << endl;
+//     cout << INT_MAX << endl
+//          << INT_MIN << endl;
+//     cout << LONG_LONG_MAX << endl
+//          << ULLONG_MAX << endl;
 
-    cout << numeric_limits<int>::max() << endl;
-    cout << numeric_limits<float>::min() << endl;
+//     cout << numeric_limits<int>::max() << endl;
+//     cout << numeric_limits<float>::min() << endl;
 
-    cout << o << endl
-         << y << endl
-         << z << endl
-         << x << endl
-         << m << endl
-         << l << endl
-         << n << endl
-         << ch << endl
-         << ch2 << endl
-         << word << endl
-         << NAME << endl;
+//     cout << o << endl
+//          << y << endl
+//          << z << endl
+//          << x << endl
+//          << m << endl
+//          << l << endl
+//          << n << endl
+//          << ch << endl
+//          << ch2 << endl
+//          << word << endl
+//          << NAME << endl;
 
-    return 0;
-}
+//     return 0;
+// }

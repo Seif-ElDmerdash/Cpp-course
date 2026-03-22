@@ -16,7 +16,7 @@
 // //     if(a==b && b==c && a==c){
 // //         cout << "This is an Equilatoral Triangle!";
 // //     }
-// //     else if (a==b || b==c || a==c){ 
+// //     else if (a==b || b==c || a==c){
 // //         cout << "This is an Isoceles Triangle!";
 // //     }
 // //     else{
@@ -31,7 +31,7 @@
 // // #include <iostream>
 
 // // int main(){
-// //     using std::cout; using std::cin; 
+// //     using std::cout; using std::cin;
 
 // //     int w;
 // //     cin >> w;
@@ -85,20 +85,16 @@
 //             cout << "Invalid response" << "\n";
 //     }
 
-
 //     cout << "************************************";
-
-
 
 //     return 0;
 // }
-
 
 // #include <iostream>
 
 // int main(){
 //     using namespace std;
-    
+
 //     int x;  cout << "Enter a number: "; cin >> x;
 
 //     cout << ((x&1) ==0 ? "Even" : "Odd");
@@ -106,14 +102,13 @@
 //     return 0;
 // }
 
-
 // #include <iostream>
 
 // int main(){
 //     using namespace std;
 
 //     char unit ; double temp;
-    
+
 //     cout << "F = Fahrenheit" << "\n";
 //     cout << "C = Celsius" << "\n";
 //     cout << "Enter what unit you want to convert to" << "\n";
@@ -140,7 +135,6 @@
 //     return 0;
 // }
 
-
 // #include <iostream>
 
 // int main(){
@@ -161,7 +155,7 @@
 
 // int main(){
 //     using std::cout,std::cin;
-    
+
 //     int number;
 
 //     do{
@@ -199,7 +193,6 @@
 //     return 0;
 // }
 
-
 // #include <iostream>
 // int main(){
 //     using std::cout ,std::cin;
@@ -218,7 +211,6 @@
 
 // }
 
-
 // #include <iostream>
 // int main(){
 //     using std::cout ,std::cin;
@@ -236,31 +228,30 @@
 //         }
 //         cout <<"\n";
 //     }
-    
+
 //     return 0;
 // }
-
 
 // #include <iostream>
 
 // int main(){
 //     using namespace std;
-    
+
 //     int n ; string word;
 //     cin >> n;
 
 //     for(int i = 0; i<n ; i++ ){
-        
+
 //     cout << "Enter a word: ", cin >> word;
 
-//     if(word.length()>10){  
+//     if(word.length()>10){
 //         cout<< word[0] << word.length()-2 << word[word.length()-1] << "\n";
 //     }
 //     else{
 //         cout << word << "\n";
 //     }
 //     }
-    
+
 //     return 0;
 // }
 
@@ -274,12 +265,9 @@
 //     int num2 = (rand() % 6) + 1;
 //     int num3 = (rand() % 6) + 1;
 
-
 //     std::cout << num1 << '\n' << num2 << '\n' << num3;
-    
+
 // }
-
-
 
 // #include <iostream>
 // #include <ctime>
@@ -304,7 +292,6 @@
 //     }
 // }
 
-
 // #include <iostream>
 
 // int main(){
@@ -312,7 +299,7 @@
 
 //     srand(time(NULL));
 
-//     int num = (rand() % 100) +1; 
+//     int num = (rand() % 100) +1;
 //     int guess;
 //     int tries = 0;
 
@@ -328,8 +315,53 @@
 //         }
 //         else{
 //             cout << "Congrats # tries: " << tries;
-//         }  
+//         }
 
 //     }while(guess != num);
 
-// }
+//
+
+#include <iostream>
+#include <cmath>
+#include <limits>
+using namespace std;
+
+int main()
+{
+
+    bool o{true};
+    float y{3.5};
+    double z{32.67148465489};
+    int x{5};
+    unsigned int m{2147483646 + 1};
+    long long l{9223372036854775807};
+    unsigned long long n{18446744073709551615};
+    char ch{'S'};
+    unsigned char ch2{'T'};
+    std::string word{"SEIF"};
+    const std::string NAME{"TAYER"};
+
+    cout << CHAR_MAX << endl
+         << CHAR_MIN << endl;
+    cout << INT_MAX << endl
+         << INT_MIN << endl;
+    cout << LONG_LONG_MAX << endl
+         << ULLONG_MAX << endl;
+
+    cout << numeric_limits<int>::max() << endl;
+    cout << numeric_limits<float>::min() << endl;
+
+    cout << o << endl
+         << y << endl
+         << z << endl
+         << x << endl
+         << m << endl
+         << l << endl
+         << n << endl
+         << ch << endl
+         << ch2 << endl
+         << word << endl
+         << NAME << endl;
+
+    return 0;
+}

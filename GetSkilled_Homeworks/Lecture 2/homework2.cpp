@@ -3,28 +3,35 @@ using namespace std;
 
 int main()
 {
+    string name_1;
+    cout << "Student 1 name is: ";
+    cin >> name_1;
 
-    int grade_1{30};
-    string name_1{"Ahmed"};
-    string id_1{"111"};
+    string id_1;
+    cout << "His id is: ";
+    cin >> id_1;
 
-    int grade_2{20};
-    string name_2{"Hamada"};
-    string id_2{"222"};
+    double grade_1;
+    cout << "His id grade is: ";
+    cin >> grade_1;
 
-    cout << "Student 1 name is: " << name_1 << endl;
-    cout << "His id is: " << id_1 << endl;
-    cout << "His id grade is: " << grade_1 << endl;
-    cout << "Student 2 name is: " << name_2 << endl;
-    cout << "His id is: " << id_2 << endl;
-    cout << "His grade is: " << grade_2 << "\n"
-         << "\n";
+    string name_2;
+    cout << "Student 2 name is: ";
+    cin >> name_2;
 
-    cout << "Students grades in math: " << endl;
+    string id_2;
+    cout << "His id is: ";
+    cin >> id_2;
 
-    cout << name_1 << " (with id " << id_1 << ")" << " got grade: " << grade_1 << endl;
-    cout << name_2 << " (with id " << id_2 << ")" << " got grade: " << grade_2 << endl;
-    cout << "Average grade is: " << (grade_1 + grade_2) / 2;
+    double grade_2;
+    cout << "His grade is: ";
+    cin >> grade_2;
+
+    cout << "\nStudents grades in math: \n";
+
+    cout << name_1 << " (with id " << id_1 << ") got grade: " << grade_1 << endl;
+    cout << name_2 << " (with id " << id_2 << ") got grade: " << grade_2 << endl;
+    cout << "Average grade is: " << (grade_1 + grade_2) / 2.0 << endl;
 
     return 0;
 }

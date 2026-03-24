@@ -365,3 +365,68 @@
 
 //     return 0;
 // }
+
+// #include <iostream>
+
+// using namespace std;
+
+// class Person
+// {
+
+// private:
+//     int age = 0;
+
+// public:
+//     string first;
+//     string second;
+
+//     void PrintName()
+//     {
+//         cout << first << " " << second << endl;
+//     }
+//     Person(string x, string y, int z)
+//     {
+//         first = x;
+//         second = y;
+//         setAge(z);
+//     }
+
+//     int getAge()
+//     {
+//         return age;
+//     }
+//     void setAge(int x)
+//     {
+
+//         if (x < 0)
+//         {
+//             age = 0;
+//         }
+//         else if (x >= 100)
+//         {
+//             age = 100;
+//         }
+//         else
+//         {
+//             age = x;
+//         }
+//     }
+// };
+
+// class Embryo : public Person
+// {
+// public:
+//     using Person::Person;
+//     void birthed()
+//     {
+//         cout << "Umbilical cord removed";
+//     }
+// };
+
+// int main()
+// {
+//     Embryo hamada("ahmed", "ahmed", -4);
+//     hamada.PrintName();
+//     hamada.birthed();
+    
+// }

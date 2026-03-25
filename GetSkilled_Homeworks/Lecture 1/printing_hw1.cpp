@@ -20,3 +20,15 @@ int main()
 
     cout << "\n\nBye\n\n";
 }
+
+/*  The answer is:
+
+    Guess the output
+    ---
+    25
+    14/2
+    7
+    endl
+    Practice makes perfect
+    
+*/

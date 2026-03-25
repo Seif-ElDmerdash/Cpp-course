@@ -428,5 +428,43 @@
 //     Embryo hamada("ahmed", "ahmed", -4);
 //     hamada.PrintName();
 //     hamada.birthed();
-    
+
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     string name1, name2;
+
+//     cin >> name1 >> name2;
+
+//     cout << (name1 > name2) << endl
+//          << (name1 < name2) << endl
+//          << (name1 >= name2) << endl
+//          << (name1 <= name2) << endl
+//          << (name1 == name2) << endl
+//          << (name1 != name2) << endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     bool x{2 != 0};
+//     bool y{-1 !=0};
+//     bool z(500);
+//     bool l(-1000);
+//     bool m = 2;
+//     bool n = -2;
+
+//     cout<<boolalpha<<x<<"\n"<<y<<"\n"<<z<<"\n"<<l<<"\n"<<m<<"\n"<<n<<endl;
+
+//     return 0;
 // }

@@ -294,57 +294,58 @@
 //     return 0;
 // }
 
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
 
-// class Students{
+class Students{
 
-//     private:
+    private:
 
-//         int ID;
-//         string st_name;
-//         double marks;
+        int ID;
+        string st_name;
+        double marks;
 
-//     public:
+    public:
 
-//         void SetInfo(){
-//             cout << "Enter Student ID: ";
-//             cin>>ID;
-//             cout << "Enter Student Name: ";
-//             cin.ignore();
-//             getline(cin, st_name);
-//             cout << "Enter Marks: ";
-//             cin >> marks;
-//         }
+        void SetInfo(){
+            cout << "Enter Student ID: ";
+            cin>>ID;
+            cout << "Enter Student Name: ";
+            cin.ignore();
+            getline(cin, st_name);
+            cout << "Enter Marks: ";
+            cin >> marks;
+        }
 
         
-//         void displayinfo(){
-//             cout<<"ID: "<<ID<<endl
-//                 <<"Name: "<<st_name<<endl
-//                 <<"Grade: "<<get_marks()<<endl;
-//         }
+        void displayinfo(){
+            cout<<"ID: "<<ID<<endl
+                <<"Name: "<<st_name<<endl
+                <<"Grade: "<<marks<<endl
+                <<"GPA: "<<get_marks()<<endl;
+        }
 
-//         char get_marks(){
-//             if(marks>=85){return 'A';}
-//             else if(marks>=70){return 'B';}
-//             else if(marks>50){return 'C';}
-//             else{return 'F';}
-//         };
+        char get_marks(){
+            if(marks>=85){return 'A';}
+            else if(marks>=70){return 'B';}
+            else if(marks>50){return 'C';}
+            else{return 'F';}
+        };
 
     
-// };
+};
 
-// int main(){
+int main(){
 
-//     Students st1;
-//     Students st2;    
+    Students st1;
+    Students st2;    
 
-//     st1.SetInfo();
-//     st2.SetInfo();
+    st1.SetInfo();
+    st2.SetInfo();
 
-//     st1.displayinfo();
-//     st2.displayinfo();
+    st1.displayinfo();
+    st2.displayinfo();
 
-//     return 0;
-// }
+    return 0;
+}

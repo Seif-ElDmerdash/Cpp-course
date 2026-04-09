@@ -1,2 +1,0 @@
-# Training-Repo
-C++ Problems

@@ -2,22 +2,26 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
 
-    double num1,num2,num3,num4,num5;
+    double n1, n2, n3, n4, n5;
 
-    cin>>num1>>num2>>num3>>num4>>num5;
+    cin >> n1 >> n2 >> n3 >> n4 >> n5;
 
-    double sum{num1+num2+num3+num4+num5};
-    double first_3 {num1+num2+num3};
-    double last_2 {num4+num5};
-    double first_3_avg {first_3/3};
-    double last_2_avg {last_2/2};
+    double sum1{n1 + n2 + n3 + n4 + n5};
 
-    cout<<sum/5<<endl;
-    cout<<first_3/last_2<<endl;
-    cout<<first_3_avg/last_2_avg<<endl;
+    double avg1(sum1 / 5.0);
 
-    cout<<sum * 2/3<<endl;
+    double sum2((n1 + n2 + n3) / (n4 + n5));
+
+    double avg3(((n1 + n2 + n3) / 3.0) / ((n4 + n5) / 2.0));
+
+    cout << avg1 << endl
+         << sum2 << endl
+         << avg3 << endl;
+
+    cout << (sum2 * (2.0 / 3.0)) << ", C = 2/3 B" << endl;
+
     return 0;
 }

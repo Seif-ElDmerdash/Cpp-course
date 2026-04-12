@@ -468,3 +468,103 @@
 
 //     return 0;
 // }
+
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+
+//     int end,start{3};
+
+//     cin>>end;
+
+//     while(start<=end){
+
+//         if(start%3 == 0)
+//             cout<<start<<endl;
+//         start+=3;
+
+//     }
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+
+//     int num,power,result{1};
+
+//     cin>>num>>power;
+
+//     while(power>0){
+
+//         result*=num;
+//         power--;
+//     }
+
+//     cout<<result<<endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     int num;
+//     int result{0};
+
+//     cin >> num;
+//     if (num == 0)
+//     {
+//         cout << "1" << endl;
+//         return 0;
+//     }
+//     while (num != 0)
+//     {
+//         num = num / 10;
+//         result++;
+//     }
+
+//     cout << result << endl;
+//     return 0;
+// }
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    int cases;
+    cin >> cases;
+
+    while (cases > 0)
+    {
+        int start{1};
+        int sum{0};
+
+        int end;
+        cin >> end;
+        
+        while (end < 0)
+        {
+            cout << "Enter a valid end point!" << endl;
+            cin >> end;
+        }
+        while (start <= end)
+        {
+            sum += start;
+            start++;
+        }
+        cout << sum << endl;
+        cases--;
+    }
+    cout << "bye!" << endl;
+
+    return 0;
+}

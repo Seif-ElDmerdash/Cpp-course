@@ -673,3 +673,91 @@
 
 //     return 0;
 // }
+
+// Fibonacci practice
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     int a{0}, b{1}, sum{0};
+//     cout << a << " " << b << " ";
+
+//     for (int i = 0; i < 10; a = b, b = sum, i++)
+//     {
+//         sum = a + b;
+//         cout << sum << " ";
+//     }
+
+//     return 0;
+// }
+
+// Pair of Numbers practice
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     int n, m, sum, count{0};
+//     cin >> n >> m >> sum;
+
+//     for (int a = 1; a <= n; a++)
+//         for (int b = 1; b <= m; b++)
+//             if (a + b == sum)
+//                 count++;
+//     cout << count << " pairs with sum " << sum << endl;
+
+//     return 0;
+// }
+
+// Pair of NUmbers faster approach
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     int n, m, sum, count{0};
+//     cin >> n >> m >> sum;
+
+//     for (int a = 1; a <= n; a++)
+//         {
+//             int b = sum-a;
+//             if (1<= b && b <= m)
+//                 count++;
+//         }
+
+//     cout << count << " pairs with sum " << sum << endl;
+
+//     return 0;
+// }
+
+// Triple of Numbers
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     int n, m, w;
+
+//     cin >> n >> m >> w;
+     
+//     int count{0};
+
+//     for (int i = 1; i <= n; ++i)
+//         for (int j = i; j <= m; ++j)
+//             for (int k = 1; k <= w; ++k)
+//                 if (i + j <= k)
+//                     count++;
+
+//     cout << count << endl;
+
+//     return 0;
+// }

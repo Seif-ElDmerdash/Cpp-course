@@ -492,6 +492,29 @@
 // #include <iostream>
 // using namespace std;
 
+// int main()
+// {
+
+//     int num;
+//     int divisible;
+//     cin >> num >> divisible;
+
+//     if (num<=divisible)
+//     {
+//     cout<<num<<endl;
+//     return 0;
+//     }
+
+//     for (int i = divisible; i < num; i += divisible)
+//     {
+//         cout<<i<<" ";
+//     }
+//         return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
 // int main(){
 
 //     int num,power,result{1};
@@ -505,6 +528,35 @@
 //     }
 
 //     cout<<result<<endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     double num, power, result{1};
+//     cin >> num >> power;
+
+//     if (power == 0)
+//     {
+//         cout << "1" << endl;
+//         return 0;
+//     }
+//     if (power < 0)
+//     {
+//         for (int i = -1; i >= power; i--)
+//             result *= (1 / num);
+//         cout << result << endl;
+//         return 0;
+//     }
+
+//     for (int i = 1; i <= power; i++)
+//         result *= num;
+
+//     cout << result << endl;
 
 //     return 0;
 // }
@@ -534,37 +586,90 @@
 //     return 0;
 // }
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main()
-{
+// int main()
+// {
 
-    int cases;
-    cin >> cases;
+//     int num;
+//     int result{0};
 
-    while (cases > 0)
-    {
-        int start{1};
-        int sum{0};
+//     if (num == 0)
+//     {
+//         cout << "1" << endl;
+//         return 0;
+//     }
 
-        int end;
-        cin >> end;
-        
-        while (end < 0)
-        {
-            cout << "Enter a valid end point!" << endl;
-            cin >> end;
-        }
-        while (start <= end)
-        {
-            sum += start;
-            start++;
-        }
-        cout << sum << endl;
-        cases--;
-    }
-    cout << "bye!" << endl;
+//     for (cin >> num; num != 0; result++)
+//         num /= 10;
 
-    return 0;
-}
+//     cout << result << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     int cases;
+//     cin >> cases;
+
+//     while (cases > 0)
+//     {
+//         int start{1};
+//         int sum{0};
+
+//         int end;
+//         cin >> end;
+
+//         while (end < 0)
+//         {
+//             cout << "Enter a valid end point!" << endl;
+//             cin >> end;
+//         }
+//         while (start <= end)
+//         {
+//             sum += start;
+//             start++;
+//         }
+//         cout << sum << endl;
+//         cases--;
+//     }
+//     cout << "bye!" << endl;
+
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     int cases;
+//     cin >> cases;
+
+//     for (int i = 0; i < cases; i++)
+//     {
+//         int start{1}, sum{0}, end;
+//         cin >> end;
+//         if (end < 0)
+//         {
+//             for (; end < 0;)
+//             {
+//                 cout << "Enter a valid end point!" << endl;
+//                 cin >> end;
+//             }
+//         }
+//         for (; start <= end; start++)
+//         {
+//             sum += start;
+//         }
+//         cout << sum << endl;
+//     }
+
+//     return 0;
+// }

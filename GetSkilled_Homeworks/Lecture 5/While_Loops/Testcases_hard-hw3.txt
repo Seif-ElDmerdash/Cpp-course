@@ -1,0 +1,7 @@
+-1 5 won't work
+5 -1 won't work
+0 5 won't work
+1 10
+10 10
+1 2147483647
+2 2147483647 overflow  

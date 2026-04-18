@@ -20,9 +20,7 @@ int main()
         for (int column{1}; column <= N; ++column)
         {
 
-            if (row == column)
-                cout << "*";
-            else if (column == ((N+1) - row))
+            if (row == column || column == ((N+1) - row))
                 cout << "*";
             else
                 cout << " ";
